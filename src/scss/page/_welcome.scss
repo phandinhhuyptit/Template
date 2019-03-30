@@ -1,0 +1,5 @@
+$_color-background-welcome: #ffffff;
+#welcome{
+   background-color: $_color-background-welcome;
+   @include myfield($_color-background-welcome);
+}

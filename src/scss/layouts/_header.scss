@@ -1,0 +1,53 @@
+#header{
+   background-color: $cl-black;
+   color: $cl-gray;
+   font-size: $fs-1 - 3;
+   .menu-info{
+      cursor: default;
+      span{
+         cursor: pointer;
+         b{
+            padding: 0.5px 3px;
+            border: 1px solid $cl-gray;
+            border-radius: 3px;
+            margin-right: 3px;
+         }
+         &:hover{
+            color: $cl-active;
+            b{
+               border: 1px solid $cl-active;
+            }
+         }
+      }
+   }
+   #logo{
+      .mb-4{
+         margin-bottom: 1.5rem!important;
+      }
+   }
+   img{
+      max-width: 112px;
+   }
+   ul{
+      position: relative;
+      li{
+         margin: 0 5px;
+         padding: $pd-1;
+         a{
+         color: $cl-gray;
+         text-align: center;
+         padding: 0;
+            span{
+               display: block;
+            }
+            svg{
+               font-size: $fs-2 - 8;
+            }
+            &:hover{
+               color: $cl-active;
+            }
+         }
+      }
+      
+   }
+}

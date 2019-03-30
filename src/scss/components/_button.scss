@@ -1,0 +1,25 @@
+//  spuare button
+.btn-cir{
+   border-radius: 4px;
+   border: none;
+   padding: 7px 15px;
+   cursor: pointer;
+   font-size: 16px;
+   transition: 0.4s;
+}
+// square button
+.btn-sq{
+   border-radius: 0;
+   border: none;
+   padding:7px 15px;
+   cursor: pointer;
+   font-size: 14px;
+   transition: 0.4s;
+}
+.btn--dark{
+   background: linear-gradient(#303030,#202020);
+   color: #999999;
+}
+.btn--dark:hover{
+   color: #ffffff;
+}

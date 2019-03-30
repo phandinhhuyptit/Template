@@ -1,0 +1,9 @@
+#navigation{
+   background-color: $cl-grayblack;
+   a{
+      color: $cl-gray;
+      &:hover{
+         color: $cl-active;
+      }
+   }
+}

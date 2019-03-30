@@ -1,0 +1,23 @@
+$_contact-cl-bg-black:#000000;
+#contact{
+   background-color: $_contact-cl-bg-black;
+   @include myfield($_contact-cl-bg-black);
+   .title-field .title{
+      margin-bottom: $pd-bottom-field;
+   }
+   #discover{
+      hr{
+         border-top: 1.3px solid $cl-gray;
+      }
+      ul{
+         list-style: none;
+         li{
+            cursor: pointer;
+         }
+         li:hover{
+            color: $cl-active;
+            text-decoration: underline;
+         }
+      }
+   }
+}

@@ -1,0 +1,57 @@
+#carousel{
+   .carousel-control-prev{
+      font-size: $fs-3;
+      color: #111111;
+      width: 10%;
+   }
+   .carousel-control-next{
+      @extend .carousel-control-prev;
+   }
+   .carousel-caption{
+      input{
+         padding: 15px;
+         border-radius: 0;
+      }
+      .input-group-text{
+         padding: 15px 25px;
+         border-radius: 0;
+         color: #ffffff;
+         background-color: $cl-grayblack;
+         border: 1px solid $cl-grayblack;
+         cursor: pointer;
+      }
+      .input-group-text:hover{
+         background-color: #111111;
+      }
+      input:focus{
+         box-shadow: -1px 0px 10px #111111;
+         border:1px solid #111111;
+         border-right:none;
+      }
+   }
+   .carousel-item{
+      .carousel-caption{
+         top: 5%;
+         left: 10%;
+         text-align: left;
+      }
+      .line-carousel{
+         width: 70px;
+         border-top: 2px solid #ffffff;
+      }
+      h1{
+         font-size: $fs-2;
+         display: block;
+         width: 45%;
+      }
+   }
+   .carousel-caption--config{
+      top: unset;
+      right: 10%;
+      bottom: 5%;
+      left: 10%;
+   }
+   .carousel-caption--footer{
+      bottom: 12%;
+   }
+}

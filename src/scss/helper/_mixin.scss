@@ -1,0 +1,54 @@
+// title
+@mixin myfield($_color-background){
+   $_color-tite-field-black:#000000;
+   $_color-tite-field-white:#ffffff;
+   $_color-tite-field-content:#777777;
+   $_color-tmp:#000000;
+   @if ($_color-background==#000000){
+      $_color-tmp : $_color-tite-field-white;
+   }
+   .title-field{
+      padding: $pd-field;
+      margin: 0;
+      .title{
+         font-size: $fs-2 - 6;
+         margin: $mg-title;
+         color:$_color-tmp;
+      }
+      .line{
+         width: 80px;
+         border-top: 2px solid $_color-tmp;
+      }
+      .content{
+         font-size: $fs-1 - 3;
+         margin: 0;
+         color: $_color-tite-field-content;
+      }
+   }
+}
+
+//media query
+@mixin setQuery($type){
+   @if $type == xl {
+      @media screen and (max-width:$xl){
+         @content;
+      }  
+   }
+   @else if $type == lg {
+      @media screen and (max-width:$lg){
+         @content;
+      }  
+   }
+   @else if $type == md {
+      @media screen and (max-width:$md){
+         @content;
+      }  
+   }
+   @else if $type == sm{
+      @media screen and (max-width:$sm){
+         @content;
+      }
+   }
+}
+
+

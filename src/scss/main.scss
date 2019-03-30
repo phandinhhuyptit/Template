@@ -1,0 +1,36 @@
+@import './base/_normalize.scss';
+
+@import './helper/_variable.scss';
+@import './helper/_mixin.scss';
+//modal
+@import './components/_button.scss';
+@import './components/_card.scss';
+// @import './components/_input.scss';
+
+@import './layouts/_header.scss';
+@import './page/_navigation.scss';
+@import './page/_carouse.scss';
+@import './page/_welcome.scss';
+@import './page/_tabmain.scss';
+@import './page/_cars.scss';
+@import './page/_contact.scss';
+@import './page/_info.scss';
+@import './layouts/_footer.scss';
+@import './layouts/_menu_fixed.scss';
+
+@import './page/_modal_vehicles.scss';
+
+
+// responsive
+@import './responsive/_resmenu_fixed.scss';
+@import './responsive/_resheader';
+@import './responsive/_resNavigation.scss';
+@import './responsive/_res_carousel.scss';
+@import './responsive/_res_welcome.scss';
+@import './responsive/_res_tabMain.scss';
+@import './responsive/_res_cars.scss';
+@import './responsive/_res_contact.scss';
+@import './responsive/_res_info.scss';
+@import './responsive/_res_footer.scss';
+@import './responsive/_res_modal_vehicles.scss';
+

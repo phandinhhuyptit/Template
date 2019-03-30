@@ -1,0 +1,50 @@
+
+#vehicles{
+   @include setQuery(md){
+      .modal-body{
+         display: none;
+      }
+      button{
+         display: none;
+      }
+      ul{
+         width: 100%;
+         li{
+            width: 100%;
+            border-bottom: 1px solid #000000;
+            a{
+               display: block;
+               height: 100%;
+               color: $cl-black;
+               text-decoration: none;
+               font-size: $fs-1 - 1;
+               padding:5px 10px !important;
+               &:hover{
+                  background-color: #dddddd;
+               }
+            }
+         }
+      }
+      .modal-dialog{
+         top: 17.5%;
+         height: 81.5%;
+         margin-top: 0!important;
+      }
+   }
+   #outVehicles{
+      border: 0px solid transparent;
+      background-color: $cl-grayblack;
+      a{
+         color: white;
+         font-size: 30px;
+         svg{
+            margin-right: 10px;
+
+         }
+         &:hover{
+            background-color: #000000;
+         }
+      }
+   }
+
+}

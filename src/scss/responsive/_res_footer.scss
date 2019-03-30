@@ -1,0 +1,22 @@
+#footer{
+   @include setQuery(md){
+      padding-bottom: 65px;
+      span{
+         font-size: $fs-1 - 4;
+      }
+      .link-top{
+         background-color: rgba(29, 29, 29, 0.7);
+         bottom: 50%;
+         color: #ffffff;
+         height: 40px;
+         width: 40px;
+         border-radius: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+      .line_languge{
+         display: none;
+      }
+   }
+}

@@ -1,0 +1,41 @@
+#tabmain {
+   @include setQuery(lg) {
+      .tab-content {
+         .tab-item {
+            width: 49.9%;
+         }
+         .tab-item.item-big {
+            width: 49.9%;
+         }
+      }
+   }
+   @include setQuery(md) {
+      .tab-content {
+         .tab-item {
+            width: 100%;
+         }
+         .tab-item.item-big {
+            width: 100%;
+         }
+      }
+      .card-field {
+         .card-field__title {
+            position: unset;
+            height: 100px!important;
+            p{
+               font-size: $fs-1 - 1;
+            }
+            .card-field__content{
+               opacity: 1!important;
+               font-size: $fs-1 - 4;
+            }
+         }
+         .card-field__footer{
+            position: unset;
+            opacity: 1!important;
+            margin-bottom: 0;
+            font-size: $fs-1 - 3;
+         }  
+      }
+   }
+}

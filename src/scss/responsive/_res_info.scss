@@ -1,0 +1,11 @@
+#info{
+   @include setQuery(md) {
+      .info__content {
+         .social {
+            svg {
+               margin-bottom: 15px;
+            }
+         }
+      }
+   }
+}

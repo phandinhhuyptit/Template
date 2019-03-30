@@ -1,0 +1,8 @@
+#contact {
+   @include setQuery(lg) {
+      h3 {
+         font-size: $fs-1 + 6 !important;
+      }
+   }
+   
+}

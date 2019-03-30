@@ -1,0 +1,44 @@
+$_cars-cl-bg-black: #000000;
+#cars{
+   background-color: $_cars-cl-bg-black;
+   @include myfield( $_cars-cl-bg-black);
+   width: 100%;
+   overflow-x: hidden;
+   .title-field{
+      padding-bottom: $pd-bottom-field - 20;
+   }
+   hr{
+      margin: 0;
+      border-top: 1px solid #999999;
+   }
+   .owl-carousel{
+      .item{
+         img{
+            max-width: 100%;
+         }
+      }
+      .owl-nav{
+         span{
+            color: #ffffff;
+            font-size: 80px;
+            position: absolute;
+            top: 0;
+         }
+         .owl-next span{
+            left: 100%;
+         }
+         .owl-prev span{
+            right:100%;
+         }
+      }
+      .owl-dot{
+         border-top: 3px solid $cl-grayblack;
+         border-radius: 5px;
+         width: 60px;
+         margin: 5px;
+      }
+      .owl-dot.active{
+         border-top: 3px solid $cl-active;
+      }
+   }
+}

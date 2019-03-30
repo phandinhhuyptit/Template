@@ -1,0 +1,7 @@
+#cars{
+   @include setQuery(md){
+      .owl-dot{
+         display: none;
+      }
+   }
+}

@@ -1,0 +1,50 @@
+$_cl-bg-title:  rgba(0,0,0,0.4);
+$_cl-bg-title-hover: rgba(0,0,0,0.7);
+.card-field{
+   position: relative;
+   overflow: hidden;
+   img{
+      width: 100%;
+   }
+   .card-field__title{
+      position: absolute;
+      bottom: 0;
+      background-color: $_cl-bg-title;
+      width: 100%;
+      height: 55px;
+      color: #ffffff;
+      transition: 0.8s;
+      h3{
+         font-size: $fs-1 + 2;
+         padding: 7px 13px 3px 13px;
+         margin: 0;
+         font-weight:400;
+      }
+      .card-field__content{
+         font-size: $fs-1 - 3;
+         padding: 0 15px;
+         opacity: 0;
+         transition: 1.6s;
+      }
+      .card-field__footer{
+         padding: 0 15px;
+         position: absolute;
+         opacity: 1;
+         transition: 0.2s;
+         font-size: $fs-1 - 1;
+      }
+   }
+   
+}
+.card-field:hover{
+   .card-field__title{
+      background-color: $_cl-bg-title-hover;
+      height: 120px;
+      .card-field__content{
+         opacity: 1;
+      }
+      .card-field__footer{
+         opacity: 0;
+      }
+   }
+}
